@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: white;
+  margin: 0;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #14C38E;
+}
+
+li {
+  float: right;
+}
+
+.nameP{
+  font-style: oblique;
+  font-weight: bold;
+  font-family: "Sitka Text";
+  font-size: 26px;
+}
+
+li a {
+  font-family: Candara;
+  font-weight: bold;
+  display: block;
+  color: black;
+  padding: 16px 18px;
+  font-size: 24px;
+  margin-right: 20px;
+}
+
+li a:hover {
+  background-color: #00FFAB;
+  cursor: pointer;
+}
+
+.header {
+  display: flex;
+  background-color: #0F3D3E;
+  color: white;
+  min-height: 400px;
+}
+
+.header .container {
+  width: 100%;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.header img {
+  width: 120px;
+  height: 140px;
+  border-radius: 5px;
+}
+
+.imagen {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.header h1 {
+  margin-top: 10px;
+  font-size: 1.5em;
+  text-align: center;
+  font-style: oblique;
+}
+
+.summary-cards .container {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.summary-cards img{
+  max-width: 180px;
+  display: block;
+  margin: auto;
+}
+
+.card {
+  flex: 1 0 21%;
+  background-color: #E2DCC8;
+  color: black;
+  border-radius: 10px;
+  margin: 20px 10px;
+  -webkit-box-shadow: 9px 2px 13px 2px rgba(0, 0, 0, 0.35);
+  box-shadow: 9px 2px 13px 2px rgba(0, 0, 0, 0.35);
+  padding: 30px 20px;
+  cursor: pointer;
+}
+
+.card:nth-child(even) {
+  background-color: #F1F1F1;
+
+}
+
+.card h2 {
+  text-align: center;
+  margin-top: 16px;
+  font-style: oblique;
+  font-family: Arial;
+
+}
+
+.card img {
+  width: 100px;
+  height: 120px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+footer {
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #14C38E;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+}
+
+footer img {
+  width: 50px;
+}
+
+@media (max-width: 1000px) {
+  .header .container {
+    margin: 25px 0px;
+    flex-direction: column;
+  }
+
+  .header img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .imagen {
+    margin: auto;
+  }
+
+  li a{
+    flex-direction: column;
+    margin: auto;
+    font-size: 15px;
+  }
+
+  .nameP{
+    font-size: 15px;
+    flex-direction: column;
+    margin: auto;
+  }
+
+  .containerN{
+    flex-direction: column;
+  }
+}
