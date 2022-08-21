@@ -28,6 +28,7 @@ li {
 }
 
 .nameP{
+  margin-left: 90px;
   font-style: oblique;
   font-weight: bold;
   font-family: "Sitka Text";
@@ -40,12 +41,12 @@ li a {
   display: block;
   color: black;
   padding: 16px 18px;
-  font-size: 24px;
+  font-size: 26px;
   margin-right: 20px;
 }
 
 li a:hover {
-  background-color: #00FFAB;
+  background-color: #C1D5A4;
   cursor: pointer;
 }
 
@@ -81,12 +82,11 @@ p {
   border-radius: 5px;
 }
 
-
-
 .imagen {
   margin-left: auto;
   margin-right: auto;
   display: block;
+  cursor: pointer;
 }
 
 .header h1 {
@@ -124,7 +124,6 @@ p {
 
 .card:nth-child(even) {
   background-color: #F1F1F1;
-
 }
 
 .card h2 {
@@ -155,7 +154,63 @@ footer img {
   width: 50px;
 }
 
-@media (max-width: 750px) {
+/* Sidebar */
+
+#sidebar {
+  position: fixed;
+  width: 180px;
+  height: 100%;
+  background-color: #14C38E;
+  left: -180px;
+  transition: all 0.5s linear;
+}
+
+#sidebar ul {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+#sidebar.active {
+  left: 0px;
+}
+
+#sidebar.active #toggle-btn {
+  left: 140px;
+  color: black;
+}
+
+#sidebar li {
+  width: 100%;
+}
+
+#sidebar a {
+  color: black;
+  text-align: center;
+  margin-right: 0;
+}
+
+#toggle-btn {
+  border: none;
+  outline: none;
+  background: none;
+  color: black;
+  cursor: pointer;
+  position: absolute;
+  left: 210px;
+  top: 10px;
+}
+
+#toggle-btn span {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+
+@media (max-width: 800px) {
   .header .container {
     display: flex;
     margin: 25px 0px;
